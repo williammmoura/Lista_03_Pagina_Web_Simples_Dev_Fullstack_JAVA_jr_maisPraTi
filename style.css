@@ -1,0 +1,116 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Define a altura total da página */
+html, body {
+    height: 100%;
+}
+
+/* Configura o layout flexbox para empurrar o footer para o rodapé */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilização do menu */
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e4e4e4;
+    padding: 10px 20px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+}
+
+#menu ul li {
+    margin: 0 15px;
+}
+
+#menu ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu ul li a:hover {
+    background-color: #cccccc;
+    border-radius: 6px;
+}
+
+#menu button {
+    background-color: #8fc3f7;
+    color: #e4e4e4;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#menu button:hover {
+    background-color: #74b2ef;
+}
+
+/* Estilização do header */
+header {
+    background-color: #8fc3f7;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilização das imagens no banner */
+#main-banner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Faz o banner ocupar toda a largura da página */
+    margin-bottom: 20px;
+}
+
+#main-banner img {
+    width: 25%; /* Cada imagem ocupa 25% da largura, 4 imagens = 100% */
+    height: auto;
+    object-fit: cover; /* Ajusta a imagem ao container */
+    border-radius: 0; /* Remove bordas arredondadas para efeito de banner */
+}
+
+/* Estilização da Introdução (main) */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e4e4e4;
+    flex-grow: 1; /* Faz o main crescer para ocupar o espaço restante */
+    flex-wrap: wrap; /* Garante que o conteúdo principal e aside se ajustem abaixo do banner */
+}
+
+/* Estilização do section */
+#main-introduction {
+    flex-basis: 70%;
+    padding-right: 20px;
+}
+
+/* Estilização do aside */
+aside {
+    flex-basis: 30%;
+    padding-left: 20px;
+    border-left: 2px solid #74b2ef;
+}
+
+/* Estilização do footer */
+footer {
+    background-color: #8fc3f7;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
