@@ -43,7 +43,7 @@ body {
 }
 
 #menu ul li a:hover {
-    background-color: #cccccc;
+    background-color:  #fcfcfc;
     border-radius: 6px;
 }
 
@@ -70,17 +70,16 @@ header {
 
 /* Estilização das imagens no banner */
 #main-banner {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Alinha as imagens horizontalmente */
     width: 100%; /* Faz o banner ocupar toda a largura da página */
-    margin-bottom: 20px;
+    overflow: hidden; /* Garante que o conteúdo não exceda os limites do banner */
 }
 
 #main-banner img {
-    width: 25%; /* Cada imagem ocupa 25% da largura, 4 imagens = 100% */
-    height: auto;
-    object-fit: cover; /* Ajusta a imagem ao container */
-    border-radius: 0; /* Remove bordas arredondadas para efeito de banner */
+    width: 25%; /* Cada imagem ocupa 25% da largura do banner */
+    height: auto; /* Mantém a proporção das imagens */
+    max-height: 150px; /* Define uma altura máxima reduzida para o banner */
+    object-fit: cover; /* Cobre o espaço, mantendo a proporção */
 }
 
 /* Estilização da Introdução (main) */
@@ -94,12 +93,50 @@ main {
 }
 
 /* Estilização do section */
+h2 {
+    margin-top: 20px;
+}
+
 #main-introduction {
     flex-basis: 70%;
-    padding-right: 20px;
+    padding: 10px; /* Remove o padding padrão */
+    text-align: justify;
+}
+
+/* Estilização da seção de notícias */
+h3 {
+    margin-top: 20px;
+}
+
+#ul-news {
+    padding: 10px; /* Remove o padding padrão */
+    color: #1263b5;
+    list-style: none;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+#ul-news li {
+    margin-top: 10px; /* Espaço entre os itens */
+}
+
+.menu-items-list-news {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-items-list-news:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
 /* Estilização do aside */
+/* Estilização do aside de links relacionados */
+#aside-h2 {
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    margin-top: 20px;
+}
+
 aside {
     flex-basis: 30%;
     padding-left: 20px;
@@ -115,7 +152,7 @@ aside ul li {
 }
 
 aside ul li .aside-link {
-    padding: 10px;
+    padding: 2px;
     text-decoration: none;
     color: inherit;
 }
