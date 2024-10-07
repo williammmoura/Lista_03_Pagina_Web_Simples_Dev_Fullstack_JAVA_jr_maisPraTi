@@ -56,8 +56,9 @@ Clone o repositório:
 
 ```bash
 git clone https://github.com/usuario/projeto-web-simples.git
-Abra o arquivo index.html em um navegador de sua preferência.
 ```
+Abra o arquivo index.html em um navegador de sua preferência.
+
 
 ##Tecnologias Utilizadas
 - **HTML5**: Estrutura da página web.
