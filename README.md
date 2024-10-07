@@ -55,7 +55,7 @@ A estilização da página foi feita utilizando **CSS** para melhorar a experiê
 Clone o repositório:
 
 ```bash
-git clone https://github.com/usuario/projeto-web-simples.git
+git@github.com:williammmoura/Lista_03_Pagina_Web_Simples_Dev_Fullstack_JAVA_jr_maisPraTi.git
 ```
 Abra o arquivo index.html em um navegador de sua preferência.
 
